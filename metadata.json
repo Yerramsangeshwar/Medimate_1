@@ -1,0 +1,6 @@
+{
+  "name": "MediMate - Medicine Management & Health Reminder Platform",
+  "description": "Comprehensive medicine management, smart dosage reminders, inventory tracking, prescription scanner, and family adherence analytics platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

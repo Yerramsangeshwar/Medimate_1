@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "./styles/global.css";
+
+/* Senior Citizen Accessibility Mode */
+body.senior-mode {
+  font-size: 19px !important;
+  line-height: 1.6 !important;
+}
+
+body.senior-mode h1 {
+  font-size: 34px !important;
+}
+
+body.senior-mode h2 {
+  font-size: 26px !important;
+}
+
+body.senior-mode .dose-name,
+body.senior-mode .med-tile-name {
+  font-size: 22px !important;
+}
+
+body.senior-mode .dose-meta,
+body.senior-mode .med-tile-meta,
+body.senior-mode .stat-label {
+  font-size: 16px !important;
+}
+
+body.senior-mode .btn {
+  padding: 14px 22px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  min-height: 52px !important;
+}
+
+body.senior-mode .stat-value {
+  font-size: 28px !important;
+}
+
+body.senior-mode .dose-card {
+  padding: 20px !important;
+  border-width: 2px !important;
+}
+
+/* Print Styles for Clinical Reports */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .app-nav,
+  .no-print,
+  button,
+  .btn {
+    display: none !important;
+  }
+  .app-main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+  }
+}
